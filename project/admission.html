@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+
+    <link rel="stylesheet" href="static/styles/reset.css">
+    <link rel="stylesheet" href="static/styles/style.css">
+
+    <meta name="author" content="">
+    <meta name="description" content="Процес вступу до LittleLearners Academy: кроки подачі заявки, структура оплати та додаткові послуги.">
+    <link rel="icon" type="image/png" href="static/images/icon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="page-header">
+        <div class="menu-overlay hidden"></div>
+        <a href="admission.html" class="admission-link">
+            <div class="admission-banner">
+                <img src="static/images/navbar/desktop-header-bg.svg" alt="" class="desktop-right-bg hidden">
+                <img src="static/images/navbar/desktop-header-bg.svg" alt="" class="desktop-left-bg hidden">
+                <img src="static/images/navbar/left-bg.svg" alt="" class="left-bg">
+                <img src="static/images/navbar/right-bg.svg" alt="" class="right-bg">
+                <div class="admission-content">
+                    <span>Прийом відкрито, встигніть зайняти своє місце</span>
+                    <img src="static/images/navbar/arrow.svg" alt="" class="arrow">
+                </div>
+                <img src="static/images/navbar/left-top.svg" alt="" class="left-top">
+                <img src="static/images/navbar/right-bottom.svg" alt="" class="right-bottom">
+                <img src="static/images/navbar/left-top.svg" alt="" class="desktop-header-icon-left hidden">
+                <img src="static/images/navbar/left-top.svg" alt="" class="desktop-header-icon-right hidden">
+            </div>
+        </a>
+    
+        <nav>
+            <div class="off-screen-menu">
+                <img src="static/images/navbar/logo.svg" alt="Логотип сайту" class="menu-site-logo">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="404.html">Про нас</a></li>
+                    <li><a href="404.html">Навчання</a></li>
+                    <li><a href="admission.html">Прийом</a></li>
+                    <li><a href="student-life.html">Студентське життя</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+    
+            <div class="navbar">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="static/images/navbar/logo.svg" alt="Логотип сайту" class="site-logo">
+                    </a>
+                </div>
+                <div class="navbar-desktop-menu hidden">
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="404.html">Про нас</a></li>
+                        <li><a href="404.html">Навчання</a></li>
+                        <li><a href="admission.html">Прийом</a></li>
+                        <li><a href="student-life.html">Студентське життя</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="burger-menu">
+                    <img src="static/images/navbar/menu-icon.svg" alt="Іконка меню" class="burger-menu-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main>
+        <section class="heading">
+            <div class="container">
+                <img src="static/images/contact/border.svg" alt="" class="border">
+        
+                <div class="two-cols-desktop">
+                    <div class="el">
+                        <div class="admission-heading-text">
+                            <p class="tag"><span class="tag-text">Прийом</span></p>
+                            <h2 class="second-level-title">
+                                <p class="second-level-title-text">Приєднуйтесь до нашої родини юних учнів</p>
+                            </h2>
+                        </div>
+                    </div>
+        
+                    <div class="el center">
+                        <p class="info-description">
+                            В Little Learners Academy ми запрошуємо вас розпочати захоплюючу освітню подорож для вашої дитини.
+                            Наш процес прийому розроблений таким чином, щоб бути прозорим, простим і інклюзивним.
+                            Ось покрокова інструкція, як приєднатися до нашої школи.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <section class="admission-process">
+            <div class="center">
+                <p class="tag"><span class="tag-text">Процес</span></p>
+                <h2 class="second-level-title">
+                    <p class="second-level-title-text">Процес прийому</p>
+                </h2>
+                <p class="info-description">
+                    Розпочніть захоплюючу освітню подорож разом з нами! Наш процес прийому та реєстрації є воротами
+                    до надання вашій дитині виняткового досвіду навчання в нашому дитячому садку.
+                </p>
+            </div>
+    
+            <div class="steps" id="steps-container">
+                <!-- Наповнюється через static/scripts/steps.js -->
+            </div>
+        </section>
+        
+        <section class="fee_structure">
+            <div class="center">
+                <p class="tag"><span class="tag-text">Оплата</span></p>
+                <h2 class="second-level-title">
+                    <p class="second-level-title-text">Структура оплати</p>
+                </h2>
+                <p class="info-description">
+                    Наша структура оплати є прозорою, і ми прагнемо підтримувати конкурентоспроможні ціни
+                    в секторі освіти. Вартість залежить від програми, вікової групи
+                    та будь-яких додаткових послуг, які ви обираєте.
+                </p>
+            </div>
+        
+            <div class="table_container">
+                <div class="table_wrapper">
+                    <table id="fee_table">
+                        <thead>
+                            <tr>
+                                <th>Програма</th>
+                                <th>Вікова група</th>
+                                <th>Щорічна плата за навчання</th>
+                                <th>Реєстраційний збір</th>
+                                <th>Збір за активності</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Наповнюється через static/scripts/table.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <div class="table_container">
+                <div class="table_wrapper">
+                    <table id="fee_table" class="add-services">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Додаткові послуги</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Наповнюється через static/scripts/table.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-container-item">
+                    <div class="footer_logo">
+                        <img src="static/images/footer/logo.svg" alt="">
+                        <p>Ми віримо в силу гри, яка сприяє творчості.</p>
+                    </div>
+    
+                    <div class="footer_contact">
+                        <a href="mailto:hello@littlelearners.com">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/mail-icon.svg" alt="">
+                                </span>
+                                <p>hello@littlelearners.com</p>
+                            </span>
+                        </a>
+                        <a href="tel:+9191813232309">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/phone-icon.svg" alt="">
+                                </span>
+                                <p>+91 91813 23 2309</p>
+                            </span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Q7Ko9xN2Pibs7n3v7">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/geo-icon.svg" alt="">
+                                </span>
+                                <p>Івано-Франківськ</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="flex-container-item">
+                    <div class="footer_links">
+                        <div class="footer_column">
+                          <h2>Головна</h2>
+                          <a href="index.html#features">Особливості</a>
+                          <a href="index.html#testimonials">Відгуки</a>
+                          <a href="index.html#faq">Поширені питання</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Навчання</h2>
+                          <a href="404.html">Спеціальні можливості</a>
+                          <a href="404.html">Галерея</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Про нас</h2>
+                          <a href="404.html">Наша місія</a>
+                          <a href="404.html">Наша візія</a>
+                          <a href="404.html">Нагороди та відзнаки</a>
+                          <a href="404.html">Історія</a>
+                          <a href="404.html">Вчителі</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Контакти</h2>
+                          <a href="contact.html">Інформація</a>
+                          <a href="contact.html">Карта та напрямки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <img src="static/images/footer/line.svg" alt="" class="line">
+    
+            <div class="flex-container-row">
+                <div class="footer_policies">
+                    <div class="links">
+                        <a href="#">Умови</a>
+                        <a href="#">Політика конфідеційності</a>
+                        <a href="#">Файли</a>
+                    </div>
+                </div>
+    
+                <div class="footer_socials">
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/fb-icon.svg" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/x-icon.svg" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/ln-icon.svg" alt=""></span></a>
+                </div>
+            </div>
+    
+            <img src="static/images/footer/line.svg" alt="" class="line">
+    
+            <div class="footer_copyright">
+                <p>Авторське право &copy; [2025] Академія Маленьких Дослідників. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="static/scripts/burger-menu.js"></script>
+    <script src="static/scripts/active-menu-option.js"></script>
+    <script src="static/scripts/table.js"></script>
+    <script src="static/scripts/steps.js"></script>
+</body>
+</html>
