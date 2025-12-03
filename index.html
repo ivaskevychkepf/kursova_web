@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="static/styles/reset.css">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <meta name="author" content="" />
+    <meta name="description" content="LittleLearners Academy - школа для дітей раннього віку, яка пропонує підтримуюче та стимулююче середовище для розвитку любові до навчання. Приєднуйтесь до нас на захоплюючу освітню подорож!" />
+    <link rel="icon" type="image/png" href="static/images/icon.png">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="menu-overlay hidden"></div>
+        <a href="admission.html" class="admission-link">
+            <div class="admission-banner">
+                <img src="static/images/navbar/desktop-header-bg.svg" alt="" class="desktop-right-bg hidden">
+                <img src="static/images/navbar/desktop-header-bg.svg" alt="" class="desktop-left-bg hidden">
+                <img src="static/images/navbar/left-bg.svg" alt="" class="left-bg">
+                <img src="static/images/navbar/right-bg.svg" alt="" class="right-bg">
+                <div class="admission-content">
+                    <span>Прийом відкрито, встигніть зайняти своє місце</span>
+                    <img src="static/images/navbar/arrow.svg" alt="" class="arrow">
+                </div>
+                <img src="static/images/navbar/left-top.svg" alt="" class="left-top">
+                <img src="static/images/navbar/right-bottom.svg" alt="" class="right-bottom">
+                <img src="static/images/navbar/left-top.svg" alt="" class="desktop-header-icon-left hidden">
+                <img src="static/images/navbar/left-top.svg" alt="" class="desktop-header-icon-right hidden">
+            </div>
+        </a>
+    
+        <nav>
+            <div class="off-screen-menu">
+                <img src="static/images/navbar/logo.svg" alt="Логотип сайту" class="menu-site-logo">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="404.html">Про нас</a></li>
+                    <li><a href="404.html">Навчання</a></li>
+                    <li><a href="admission.html">Прийом</a></li>
+                    <li><a href="student-life.html">Студентське життя</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+    
+            <div class="navbar">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="static/images/navbar/logo.svg" alt="Логотип сайту" class="site-logo">
+                    </a>
+                </div>
+                <div class="navbar-desktop-menu hidden">
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="404.html">Про нас</a></li>
+                        <li><a href="404.html">Навчання</a></li>
+                        <li><a href="admission.html">Прийом</a></li>
+                        <li><a href="student-life.html">Студентське життя</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="burger-menu">
+                    <img src="static/images/navbar/menu-icon.svg" alt="Іконка меню" class="burger-menu-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <p>Набір до школи триває ще не довго! Поспішіть!</p>
+                <div id="countdown"></div>
+                <form id="modal-form">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+                    <button type="submit">Відправити</button>
+                </form>
+            </div>
+        </div>
+        
+        <section class="image-and-info-container">
+            <section class="image">
+                <div class="image-container">
+                    <img src="static/images/home-page/kids.webp" alt="Kids Image" class="kids-image">
+                </div> 
+            </section>
+        
+            <section class="welcome-info">
+                <div class="info-title-container">
+                    <h1 class="info-title">Ласкаво просимо до LittleLearners</h1>
+                    <p class="info-title-description">Там, де молоді <span class="orange">мрії злітають.</span></p>
+                    <p class="info-description">
+                        Наша школа для дітей раннього віку надає підтримуюче та стимулююче середовище, 
+                        сприяючи розвитку любові до навчання, що триває все життя. 
+                        Приєднуйтесь до нас на захоплюючу освітню подорож разом!
+                    </p>
+                    <div class="welcome-information" id="features">
+                        <div class="welcome-information-block">
+                            <p class="highlighted-number">+7000</p>
+                            <p class="number-details">Випускників</p>
+                        </div>
+                        <div class="welcome-information-block">
+                            <p class="highlighted-number">+37</p>
+                            <p class="number-details">Нагород та відзнак</p>
+                        </div>
+                        <div class="welcome-information-block">
+                            <p class="highlighted-number">+15</p>
+                            <p class="number-details">Досвідчених педагогів</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+        <section class="benefits-container">
+            <p class="tag"><span class="tag-text">Діти заслуговують</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Наші переваги</p></h2>
+            <p class="info-description">З командою досвідчених педагогів, сучасними засобами навчання та комплексною програмою ми прагнемо закласти міцний фундамент для майбутнього вашої дитини.</p>
+            <div class="benefits-card-container">
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/hol-learning.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Підхід до навчання</h3>
+                    <p class="card-description">Наша програма спрямована на розвиток когнітивних, соціальних, емоційних та фізичних навичок, забезпечуючи всебічну освіту.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/exp-educators.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Досвідчені педагоги</h3>
+                    <p class="card-description">Наші захоплені та кваліфіковані вчителі створюють підтримуюче та стимулююче навчальне середовище.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/nur-enviroment.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Підтримуюче середовище</h3>
+                    <p class="card-description">Ми приділяємо увагу безпеці та забезпечуємо теплу і турботливу атмосферу для кожної дитини.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/plb-learning.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Навчання через гру</h3>
+                    <p class="card-description">Ми віримо в силу гри для розвитку творчості, навичок вирішення проблем та уяви.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/ind-attention.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Індивідуальний підхід</h3>
+                    <p class="card-description">Малі розміри класів дозволяють надавати персоналізовану увагу, враховуючи унікальні потреби кожної дитини.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="static/images/home-page/benefits-icons/par-involvement.svg" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Залучення батьків</h3>
+                    <p class="card-description">Ми сприяємо міцному партнерству між батьками та школою для забезпечення безперешкодної комунікації та співпраці.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials-container" id="testimonials">
+            <p class="tag"><span class="tag-text">Їхні щасливі слова</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Наші відгуки</p></h2>
+            <p class="info-description">Наші відгуки є щирими роздумами про підтримуюче середовище, яке ми надаємо, де діти розвиваються як академічно, так і емоційно.</p>
+        
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/women.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Дженніфер Б</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Little Learners Academy став другим домом для моєї дитини. Турботливий персонал і захоплюючі програми змусили її з радістю йти до школи щодня!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/man1.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Девід К</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Вибір Little Learners Academy для моєї доньки був найкращим рішенням. Вона розцвіла в їх підтримуючому та стимулюючому середовищі.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/man2.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Емілі Л</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Соціальний і академічний розвиток мого сина вражає з моменту, як він приєднався до Little Learners Academy. Я вдячна за підтримку та відданість вчителів.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/women.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Дженніфер Б</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Little Learners Academy став другим домом для моєї дитини. Турботливий персонал і захоплюючі програми змусили її з радістю йти до школи щодня!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/man1.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Девід К</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Вибір Little Learners Academy для моєї доньки був найкращим рішенням. Вона розцвіла в їх підтримуючому та стимулюючому середовищі.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <img src="static/images/home-page/people/man2.svg" alt="Avatar" class="avatar">
+                            <h3 class="person-name">Емілі Л</h3>
+                            <img src="static/images/home-page/5-stars.svg" alt="5 зірок" class="rating">
+                            <p class="testimonial-text">Соціальний і академічний розвиток мого сина вражає з моменту, як він приєднався до Little Learners Academy. Я вдячна за підтримку та відданість вчителів.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-button-prev">
+                    <img src="static/images/home-page/left-arrow.svg" alt="Попередній" />
+                </div>
+                <div class="swiper-button-next">
+                    <img src="static/images/home-page/right-arrow.svg" alt="Наступний" />
+                </div>
+            </div>
+        </section>
+        
+        <section class="questions-container" id="faq">
+            <p class="tag"><span class="tag-text">Рішення для сумнівів</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Часто задавані питання</p></h2>
+            <p class="info-description">Знайдіть всю необхідну інформацію у нашому розділі FAQ, створеному для відповіді на найпоширеніші питання та допомоги вам ухвалити рішення щодо освіти вашої дитини.</p>
+        
+            <div class="accordion">
+                <div class="col-1">
+                    <div class="contentBx">
+                        <div class="label"><p>Які години роботи в Little Learners Academy?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Наші години роботи з 8:00 до 15:00 з понеділка по п’ятницю. Ми також пропонуємо додаткові варіанти догляду для батьків, які цього потребують.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Чи є у школі вимоги до форми для учнів?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Так, у нашій школі є відповідний дрес-код. Учні повинні одягатися акуратно для відеоуроків, уникати піжам і неприязного одягу. Важливо проявляти повагу.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Які позашкільні активності доступні для учнів?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Наша онлайн-школа пропонує клуби з програмування, мистецтва, музики та дебатів, а також віртуальні спортивні змагання та проекти громадської служби.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Як учні взаємодіють з вчителями?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Учні спілкуються з вчителями через живі відеоуроки, чат та заплановані індивідуальні сесії для персоналізованої підтримки.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <div class="contentBx">
+                        <div class="label"><p>Як ви враховуєте алергії та дієтичні обмеження?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Ми забезпечуємо, щоб всі страви були безпечними для алергіків і відповідали дієті. Батьки можуть надавати деталі для адаптації плану харчування.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Яке співвідношення учитель-учень?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>У Little Learners Academy співвідношення учитель-учень становить 1:15, що забезпечує персоналізовану увагу та підтримку для кожного учня.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Як ви вирішуєте питання дисципліни?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Ми орієнтуємося на позитивні очікування і відкриту комунікацію. У разі проблем ми вирішуємо їх поважним шляхом через обговорення та спільні рішення.</p>
+                        </div>
+                    </div>
+        
+                    <div class="contentBx">
+                        <div class="label"><p>Як я можу подати заявку на вступ?</p></div>
+                        <div class="content">
+                            <img src="static/images/home-page/accordion-line.svg" alt="" class="accordion-line">
+                            <p>Ви можете подати заявку онлайн через наш вебсайт, заповнивши заявку та надіславши необхідні документи. Наша команда допоможе вам!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="navigation-container">
+            <p class="tag"><span class="tag-text">Більше</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Перегляньте наші сторінки</p></h2>
+            <p class="info-description">Ваші двері до відкриття багатства корисної інформації про наш дитячий садок. Не соромтесь досліджувати та дізнаватися більше про багатий досвід, який чекає вашу дитину в нашому дитячому садку.</p>
+        
+            <div class="links">
+                <div class="link">
+                    <p class="link-header">Про нас</p>
+                    <img src="static/images/home-page/link-line.svg" alt="" class="line">
+                    <p class="link-description">Дізнайтесь про нашу місію, цінності та нашу непохитну відданість наданню найкращого навчального досвіду для вашої дитини. Познайомтесь з нашими пристрасними педагогами та нашим захоплюючим підходом.</p>
+                    <a href="404.html" class="link-link">
+                        <div class="learn-more-button">
+                            <p class="learn-more-button-text">Дізнатися більше</p>
+                            <img src="static/images/home-page/right-arrow.svg" alt="" class="arrow">
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="link">
+                    <p class="link-header">Навчання</p>
+                    <img src="static/images/home-page/link-line.svg" alt="" class="line">
+                    <p class="link-description">Поглиблене знайомство з нашими комплексними навчальними програмами, які сприяють розвитку творчості та заохочують любов до навчання. Досліджуйте нашу всебічну навчальну програму, яка сприяє інтелектуальному розвитку.</p>
+                    <a href="404.html" class="link-link">
+                        <div class="learn-more-button">
+                            <p class="learn-more-button-text">Дізнатися більше</p>
+                            <img src="static/images/home-page/right-arrow.svg" alt="" class="arrow">
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="link">
+                    <p class="link-header">Життя студентів</p>
+                    <img src="static/images/home-page/link-line.svg" alt="" class="line">
+                    <p class="link-description">Загляньте у яскравий та багатий світ студентського життя в Little Learners Academy. Дізнайтесь про різноманітні позашкільні заходи, мистецтво та ремесла, спорт і соціальні події, які роблять наш шкільний досвід справді незабутнім.</p>
+                    <a href="student-life.html" class="link-link">
+                        <div class="learn-more-button">
+                            <p class="learn-more-button-text">Дізнатися більше</p>
+                            <img src="static/images/home-page/right-arrow.svg" alt="" class="arrow">
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="link">
+                    <p class="link-header">Прийом</p>
+                    <img src="static/images/home-page/link-line.svg" alt="" class="line">
+                    <p class="link-description">Дізнайтесь про процес реєстрації та як забронювати місце для вашої дитини в Little Learners Academy. Знайдіть інформацію про вимоги до вступу, терміни подачі заявок та наявні місця.</p>
+                    <a href="admission.html" class="link-link">
+                        <div class="learn-more-button">
+                            <p class="learn-more-button-text">Дізнатися більше</p>
+                            <img src="static/images/home-page/right-arrow.svg" alt="" class="arrow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-container-item">
+                    <div class="footer_logo">
+                        <img src="static/images/footer/logo.svg" alt="">
+                        <p>Ми віримо в силу гри, яка сприяє творчості.</p>
+                    </div>
+    
+                    <div class="footer_contact">
+                        <a href="mailto:hello@littlelearners.com">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/mail-icon.svg" alt="">
+                                </span><p>hello@littlelearners.com</p>
+                            </span>
+                        </a>
+                        <a href="tel:+9191813232309">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/phone-icon.svg" alt="">
+                                </span><p>+91 91813 23 2309</p>
+                            </span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Q7Ko9xN2Pibs7n3v7">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="static/images/footer/geo-icon.svg" alt="">
+                                </span><p>Десь у світі</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="flex-container-item">
+                    <div class="footer_links">
+                        <div class="footer_column">
+                          <h2>Головна</h2>
+                          <a href="#features">Особливості</a>
+                          <a href="#testimonials">Відгуки</a>
+                          <a href="#faq">Поширені питання</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Навчання</h2>
+                          <a href="#">Спеціальні можливості</a>
+                          <a href="#">Галерея</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Про нас</h2>
+                          <a href="#">Наша місія</a>
+                          <a href="#">Наша візія</a>
+                          <a href="#">Нагороди та відзнаки</a>
+                          <a href="#">Історія</a>
+                          <a href="#">Вчителі</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Контакти</h2>
+                          <a href="#">Інформація</a>
+                          <a href="#">Карта та напрямки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <img src="static/images/footer/line.svg" alt="" class="line">
+    
+            <div class="flex-container-row">
+                <div class="footer_policies">
+                    <div class="links">
+                        <a href="#">Умови</a>
+                        <a href="#">Політика конфідеційності</a>
+                        <a href="#">Файли</a>
+                    </div>
+                </div>
+    
+                <div class="footer_socials">
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/fb-icon.svg" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/x-icon.svg" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="static/images/footer/ln-icon.svg" alt=""></span></a>
+                </div>
+            </div>
+    
+            <img src="static/images/footer/line.svg" alt="" class="line">
+    
+            <div class="footer_copyright">
+                <p>Авторське право &copy; [2025] Академія Маленьких Дослідників. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="static/scripts/burger-menu.js"></script>
+    <script src="static/scripts/active-menu-option.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="static/scripts/swiper.js"></script>
+    <script src="static/scripts/accordion.js"></script>
+    <script src="static/scripts/modal.js"></script>
+</body>
+</html>
